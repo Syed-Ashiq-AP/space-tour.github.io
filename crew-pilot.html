@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <script src="./assets/script/script.js" async></script>
+</head>
+
+<body>
+  <section class="body" style="background-image:url('./assets/crew/background-crew-desktop.jpg');">
+    <section class="top-bar">
+      <section class="logo">
+        <img src="./assets/shared/logo.svg" alt="logo">
+      </section>
+      <section class="navbar">
+        <div class="hz"></div>
+        <ul>
+          <li onclick="load_state('./')"><b>00</b>&nbsp;&nbsp;HOME</li>
+          <li onclick="load_state('./destination-moon.html')"><b>01</b>&nbsp;&nbsp;DESTINATION</li>
+          <li onclick="load_state('./crew-commander.html')" class="li-active"><b>02</b>&nbsp;&nbsp;CREW</li>
+          <li onclick="load_state('./technology-vehicle.html')"><b>03</b>&nbsp;&nbsp;TECHNOLOGY</li>
+        </ul>
+      </section>
+      <section class="hamb"><img onclick="tgl_bar()" style="width:25px;height:21px" src="./assets/shared/icon-hamburger.svg"></section>
+    </section>
+
+    <section class="bottom-bar cr-btm">
+      <section class="cr-blt">
+        
+        <h5 style="color: white;">
+          <p style="display: inline-block; " class="fade"><b>02</b></p>&nbsp;&nbsp;MEET YOUR CREW
+        </h5>
+      </section>
+      <section class="cr-brt">
+        <section class="left-bar-c">
+          <section class="crew-ltb">
+            <p class="s0">PILOT</p>
+            <p class="s1">VICTOR GLOVER</p>
+  
+            <p style="width: 450px;" class="p6">Pilot on the first operational flight of the SpaceX Crew Dragon to the
+              International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew
+              member of Expedition 64, and served as a station systems flight engineer. </p>
+  
+          </section>
+
+          <section class="crew-tabs">
+            <div onclick="load_state('./crew-commander.html')" class="c-slid"></div>
+            <div onclick="load_state('./crew-specialist.html')" class="c-slid"></div>
+            <div onclick="load_state('./crew-pilot.html')" class="c-slid c-s-active"></div>
+            <div onclick="load_state('./crew-engineer.html')" class="c-slid"></div>
+          </section>
+
+        </section>
+        <section class="right-bar-c">
+          <img style="height: auto;width:auto;" src="./assets/crew/image-victor-glover.png">
+          <div class="hl"></div>
+        </section>
+      </section>
+    </section>
+    <section id="mb" class="navbar-m">
+      <section class="n-close">
+        <img onclick="tgl_bar()" width="20" src="./assets/shared/icon-close.svg">
+      </section>
+      <ul>
+        <li onclick="load_state('./')"><b>00</b>&nbsp;&nbsp;HOME</li>
+        <li onclick="load_state('./destination-moon.html')"><b>01</b>&nbsp;&nbsp;DESTINATION</li>
+        <li onclick="load_state('./crew-commander.html')" class="li-active"><b>02</b>&nbsp;&nbsp;CREW</li>
+        <li onclick="load_state('./technology-vehicle.html')"><b>03</b>&nbsp;&nbsp;TECHNOLOGY</li>
+      </ul>
+    </section>
+  </section>
+</body>
+
+</html>

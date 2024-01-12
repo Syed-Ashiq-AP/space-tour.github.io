@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <script src="./assets/script/script.js" async></script>
+  <style>
+  
+    .body{
+      background-image: url('./assets/technology/background-technology-desktop.jpg');
+    }
+    .right-bar-c{
+      background-image: url('./assets/technology/image-space-capsule-portrait.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top:50px;
+      height:600px;
+      width:75%;
+    }
+    @media only screen and (max-width: 1100px) {
+      .body{
+        background-image: url('./assets/technology/background-technology-tablet.jpg');
+      
+      }
+      .right-bar-c  {
+        background-image: url('./assets/technology/image-space-capsule-landscape.jpg');
+        width: 100%;
+        margin-top: 50px;
+      }
+    }
+    @media only screen and (max-width: 1100px) {
+      .body{
+        background-image: url('./assets/technology/background-technology-tablet.jpg');
+      
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="body">
+    <section class="top-bar">
+      <section class="logo">
+        <img src="./assets/shared/logo.svg" alt="logo">
+      </section>
+      <section class="navbar">
+        <div class="hz"></div>
+        <ul>
+          <li onclick="load_state('./')"><b>00</b>&nbsp;&nbsp;HOME</li>
+          <li onclick="load_state('./destination-moon.html')"><b>01</b>&nbsp;&nbsp;DESTINATION</li>
+          <li onclick="load_state('./crew-commander.html')"><b>02</b>&nbsp;&nbsp;CREW</li>
+          <li onclick="load_state('./technology-vehicle.html')" class="li-active"><b>03</b>&nbsp;&nbsp;TECHNOLOGY</li>
+        </ul>
+      </section>
+      <section class="hamb"><img onclick="tgl_bar()" style="width:25px;height:21px" src="./assets/shared/icon-hamburger.svg"></section>
+    </section>
+    <section class="bottom-bar cr-btm tech-bt">
+
+
+      <section class="left-bar-c">
+        <h5 style="color: white;">
+          <p style="display: inline-block; " class="fade"><b>03</b></p>&nbsp;&nbsp;SPACE LAUNCH 101
+        </h5>
+
+        <section class="tch-btr">
+
+          <section class="crew-ltb" style="flex-direction: row; display:flex">
+
+            <section class="tech-tabs">
+              <div onclick="load_state('./technology-vehicle.html')" class="t-slid">1</div>
+              <div onclick="load_state('./technology-spaceport.html')" class="t-slid">2</div>
+              <div onclick="load_state('./technology-capsule.html')" class="t-slid t-s-active">3</div>
+            </section>
+
+            <section>
+              <p class="p6">THE TERMINOLOGY...</p>
+            <p class="s1">SPACE CAPSULE</p>
+
+            <p style="width: 450px;" class="p6">A space capsule is an often-crewed spacecraft that uses a blunt-body
+              reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your
+              time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you
+              entertained.</p>
+
+
+            </section>
+
+          </section>
+
+        <section class="right-bar-c">
+        </section>
+
+        </section>
+
+      </section>
+
+
+    </section>
+    <section id="mb" class="navbar-m">
+      <section class="n-close">
+        <img onclick="tgl_bar()" width="20" src="./assets/shared/icon-close.svg">
+      </section>
+      <ul>
+        <li onclick="load_state('./')"><b>00</b>&nbsp;&nbsp;HOME</li>
+        <li onclick="load_state('./destination-moon.html')"><b>01</b>&nbsp;&nbsp;DESTINATION</li>
+        <li onclick="load_state('./crew-commander.html')"><b>02</b>&nbsp;&nbsp;CREW</li>
+        <li onclick="load_state('./technology-vehicle.html')" class="li-active"><b>03</b>&nbsp;&nbsp;TECHNOLOGY</li>
+      </ul>
+    </section>
+  </section>
+</body>
+
+</html>
